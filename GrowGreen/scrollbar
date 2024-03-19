@@ -1,0 +1,47 @@
+#class ScrollBar:
+
+
+   #def __init__(self):
+
+
+   # h = Scrollbar(window, orient='horizontal')
+
+
+    #h.pack(side=BOTTOM, fill=X)
+
+
+    #v = Scrollbar(window)
+
+
+    #v.pack(side=RIGHT, fill=Y)
+
+
+
+
+
+    #h.config(command=XView)
+
+
+    #v.config(command=YView)
+
+#s = ScrollBar()
+
+
+
+
+
+
+
+
+
+
+
+
+def add():
+ index = listIndex(shopping, item.get())
+ addList(shopping, item.get(), index)
+ if index >= 0:
+  theList.delete(index)
+  theList.insert(index, shopping[index][0] + "-" + str(shopping[index][1]))
+ else:
+  theList.insert(END, item.get() + "-" + str(quantity.get()))
